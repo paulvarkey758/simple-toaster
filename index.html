@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toaster</title>
+    <script src="toaster.js"></script>
+</head>
+<body>
+    <button onclick="chooseToaster('success')">success</button>
+    <button onclick="chooseToaster('error')">error</button>
+    <button onclick="chooseToaster('warning')">warning</button>
+    <button onclick="chooseToaster('information')">information</button>
+    <script>
+        const chooseToaster=(key)=>{
+            if(key=="success"){
+                toaster.success("This is success")
+            }
+            if(key=="error"){
+                toaster.error("This is error")
+            }
+            if(key=="warning"){
+                toaster.warning("This is warning")
+            }
+            if(key=="information"){
+                toaster.information("This is information")
+            }
+        }
+    </script>
+</body>
+</html>
